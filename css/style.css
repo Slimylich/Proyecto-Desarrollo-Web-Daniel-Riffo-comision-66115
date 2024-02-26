@@ -67,12 +67,6 @@ nav{
     width: 100%;    
 }
 
-@media (max-width:480px){
-    nav .tb{
-        height: 40px;
-    }
-}
-
 footer{
     width: auto;
     grid-area: footer;
@@ -97,6 +91,18 @@ h1{
     line-height: normal;    
     flex-direction: row;
     flex-shrink: 0;   
+}
+
+@media (max-width:480px){
+    h1{
+        color: #DD357D;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;    
+        flex-direction: row;
+        flex-shrink: 0;   
+    }    
 }
 
 h2{
