@@ -207,6 +207,15 @@ form{
     width: auto;
 }
 
+.navbar navbar-expand-lg bg-body-tertiary{
+    background-color: #DC347C;
+}
+
+.container-fluid{
+    background-color: #DD357D;
+}
+
+
 ul{
     color: white;
     font-family: lato;
