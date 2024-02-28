@@ -4,13 +4,16 @@
     src: url(../font/Lato/Lato-Regular.ttf);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(12, 90px);
     margin: 0 70px 0 70px;
-    padding: 0;
     grid-column-gap: 20px;
     grid-template-rows: 72px auto 160px;
     grid-template-areas:
@@ -21,36 +24,15 @@ body{
     background-color: #1b1a33;
 }
 
-@media (max-width:480px){    
-    body{        
-        grid-template-columns: repeat(4, 72px);
-        grid-column-gap: 8px;
-        grid-template-rows: 40px auto 76px;
-        padding: 0;
-        margin: 16px;
-        grid-template-areas:
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer"       
-        ;   
-    }          
-}
-
-
 header{
     width: 100%;
-    height: 100vh;
     grid-area: header;
 
 }
 
-@media (max-width:480px){ 
-    header{
-        height:"auto";
-    }
-}
-
 main{
+    padding-top: 72px;
+    padding-bottom: 94px;
     grid-area: main;
 }
 
@@ -66,20 +48,17 @@ nav{
     width: 100%;    
 }
 
+.navbar{
+    background-color: #CE4656 !important; 
+}
+
 footer{
     width: auto;
     grid-area: footer;
     background-color: #000;
     margin: 0;
-    padding: 0;       
+    padding: 2rem;     
 }
-
-@media (max-width:480px){
-    footer{
-        grid-area: footer;    
-    }
-}
-
 
 h1{
     color: #DD357D;
@@ -93,7 +72,7 @@ h1{
     flex-shrink: 0;   
 }
 
-@media (max-width:480px){
+@media (max-width: 576px){
     h1{
         padding-top: 24px;
         font-size: 24px;  
@@ -101,8 +80,8 @@ h1{
 }
 
 h2{
-    display: grid;
     color: #DC347C;
+    padding: 2rem;
     text-align: center;
     font-family: Oswald;
     font-size: 48px;
@@ -111,8 +90,9 @@ h2{
     line-height: normal;
 }
 
-@media (max-width:480px){
+@media (max-width: 576px){
     h2{
+        padding: 0.5rem;
         font-size: 20px;
     }
 }
@@ -126,7 +106,7 @@ h3{
     line-height: normal;
 }
 
-@media (max-width:480px){
+@media (max-width: 576px){
     h3{
         font-size: 16px;  
     }    
@@ -141,9 +121,9 @@ p{
     line-height: normal;
 }
 
-@media (max-width:480px){
+@media (max-width: 576px){
     p{
-        font-size: 14px;  
+        font-size: 12px;  
     }    
 }
 
@@ -179,7 +159,7 @@ p{
     padding: 130px 70px 0 70px;
 }
 
-.sect{
+.sectA{
     display: flex;
     margin: 160px 0px 160px 0px;
     border: 0;
@@ -190,9 +170,8 @@ p{
           
 }
 
-@media (max-width: 480px){
-    .sect{
-        display: flex;
+@media (max-width: 576px){
+    .sectA{
         margin: 16px 0px 16px 0px;
         border: 0;
         width: 100%;
@@ -200,21 +179,39 @@ p{
     }
 }
 
-.sect__1{
+.sectA__1{
     order: 1;
 }
 
-.sect__2{
+.sectA__2{
     order: 2;
 }
 
-@media (max-width: 480px){
-    .sect__1, .sect__2, .profile, .paragraph{
-        display: flex;
-        flex-wrap: wrap;
-        width: 150px;             
-    }
+.sect__1__subtitle{
+    width: 530px;
+    height: fit-content;
 }
+
+@media (max-width: 576px){
+    .sectA__1__subtitle{    
+        width: 150px;
+    }
+
+}
+
+.sectA__1__paragraph{    
+    width: 530px;
+    height: 390px;
+}
+
+@media (max-width: 576px){
+    .sectA__1__paragraph{    
+        width: 150px;
+        height: auto;
+    }
+
+}
+
 
 .expla{
     font-size: 24px;
@@ -222,7 +219,7 @@ p{
     width: 470px;
 }
 
-@media (max-width: 480px){
+@media (max-width: 576px){
     .expla{
         font-size: 12px;
         height: 276px;
@@ -241,7 +238,7 @@ p{
     padding: 55px 80px;
 }
 
-@media (max-width: 480px){
+@media (max-width: 576px){
     #rights{
         padding: 25px 0 40px 0;
     }    
@@ -266,7 +263,7 @@ ul{
     justify-content: space-between;    
 }
 
-@media (max-width: 480px){
+@media (max-width: 576px){
     .artw{
         flex-direction: column;  
     }
@@ -279,46 +276,40 @@ ul{
 }
 
 .sectBig{
-    display: grid;
     width: 100%;
     justify-items: center;  
 }
 
 
-.sect__b{
-    display: grid;
+.sectB{
+    display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
     margin-top: 72px;
 }
 
-.sect__b__banner{
-    display: flex;
+.sectB__banner{
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
     background-color: #024269;
     width: 100%;
-    height: 193px;        
+    height: 193px;
+
 }
 
-@media (max-width: 480px){
-    .sect__b__banner, .sect__b__banner__son__img{
-        display: grid;
+@media (max-width: 576px){
+    .sectB__banner{
         width: 360px;
         height: 104px;
     
     }
-    .sect__b__banner__son__img{
+    .sectB__banner__img{
         width: 328px;
         height: 48px;
     }
 
-}
-
-.sect__b__banner__son{
-    padding: 50px 0 52px 0;
-    display: flex;
 }
 
 .format{
@@ -328,7 +319,7 @@ ul{
     margin-right: auto;   
 }
 
-@media (max-width: 480px){
+@media (max-width: 576px){
     .format{ 
         width: 100%;     
     }
@@ -343,7 +334,7 @@ ul{
     padding: 20px;    
 }
 
-@media (max-width: 480px){
+@media (max-width: 576px){
     .format__cont{
         display: flex;        
         width: 150px;
@@ -355,7 +346,7 @@ ul{
     
 }
 
-@media (max-width: 480px){
+@media (max-width: 576px){
     ul{    
         font-size: 12px;
     }
@@ -376,7 +367,7 @@ ul{
     margin: 72px;
 }
 
-@media (max-width: 480px){
+@media (max-width: 576px){
     .interest__cont{
         height: 130px;
         width: 150px;
@@ -410,33 +401,6 @@ img{
     flex-direction: row;
 }
 
-.sub1{
-    width: 530px;
-    height: 50px;
-    flex-shrink: 0;
-}
-
-@media (max-width: 480px){
-    .sub1{    
-        width: 150px;
-        height: 20px;
-    }
-
-}
-
-.paragraph{    
-    width: 530px;
-    height: 390px;
-    flex-shrink: 0;
-}
-
-@media (max-width: 480px){
-    .paragraph{    
-        width: 150px;
-        height: 100px;
-    }
-
-}
 
 .about{
     display: flex;
@@ -471,3 +435,38 @@ textarea{
     width: 1260px;
     height: 395px;
 }
+
+/* MEDIA QUERIES SMARTPHONE*/
+
+@media (max-width: 576px){       
+    body{        
+        grid-template-columns: repeat(4, 72px);
+        grid-column-gap: 8px;
+        grid-template-rows: 40px auto 76px;
+        padding: 0;
+        margin: 16px;
+        grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"       
+        ;   
+    }
+
+    header{
+        height:"auto";
+    }
+    main{
+        .sectA__1, .sectA__2, .SectA__2__profile, .sectA__1__paragraph{
+            display: flex;
+            flex-wrap: wrap;
+            width: 150px;             
+        }
+
+    }
+    
+    footer{
+        grid-area: footer;    
+    }
+}
+
+
