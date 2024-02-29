@@ -11,91 +11,83 @@
     <title>SlimyLich</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">SlimyLich</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="./pages/aboutme.html">ABOUT ME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/artworks.html">ARTWORKS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/uxuidesign.html">UXUI DESIGN</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/contact.html">CONTACT ME</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>      
-    </header>
-    <main>       
-        <h1 class="title">CHARACTER ARTIST & UX/UI DESIGNER</h1>                      
-        <section class="sect">
-            <div class="sect__1">
-                <h3 class="sub1">Hello I am XXXX</h3>
-                <p class="paragraph">A chilean character artist and UX/UI designer in formation, doing fanarts, character design and uxui design, you will find here my works and info about me</p>
-            </div>
-            <div class="sect__2">
-                <img class="profile" src="./images/Image A.png" alt="mascot character">
-            </div>
-        </section>
-        <h2>FORMATION</h2>
-        <section class="format">            
-            <div class="format__cont">
-                <div class="format__cont__info">
-                    <ul>Education
-                        <li>Institute</li>
-                        <li>Course A</li>
-                        <Li>Course B</Li>
-                        <li>Course C</li>
+    <div id=grid-container>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary navbar-dark">
+                <div class="container-fluid">
+                <a class="navbar-brand d-inline-block align-top" href="index.html">SlimyLich</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <a class="nav-link" href="./pages/artworks.html">Artworks</a>    
+                        <a class="nav-link" href="./pages/uxuidesign.html">UxUi Design</a>    
+                        <a class="nav-link" href="./pages/aboutme.html">About me</a>    
+                        <a class="nav-link" href="./pages/contact.html">Contact me</a>    
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>    
+            <h1 class="title">CHARACTER ARTIST & UX/UI DESIGNER</h1>                      
+            <section class="resume">
+                <div class="container-resume1">
+                    <h3>Hello I am Daniel</h3>
+                    <p class="paragraph">A chilean character artist and UX/UI designer in formation, doing fanarts, character design and uxui design, you will find here my works and info about me</p>
+                </div>
+                <div class="container-resume2">
+                    <img class="profile" src="./images/Image A.png" alt="mascot character">
+                </div>
+            </section>
+            <h2>FORMATION</h2>
+            <section class="academic">            
+                <div class="container-formation">
+                    <div class="formation">
+                        <ul>Education
+                            <li>Institute</li>
+                            <li>Course A</li>
+                            <Li>Course B</Li>
+                            <li>Course C</li>
+                        </ul>
+                    </div>
+                </div>            
+                <div class="container-formation">
+                    <div class="formation">
+                        <ul>Languages
+                            <li>English</li>
+                            <li>Spanish</li>
+                        </ul>
+                    </div>    
+                </div>            
+            </section>
+            <section class="skills">
+                <H2>SOFTWARE SKILLS</H2>
+                <div class="sectB__banner">
+                    <img id="skillsIcons" src="./images/Skills_icons.png" alt="Skills_icons">                                               
+                </div>
+            </section>
+            <section class="interest">
+                    <div class="hobbies">
+                    <ul>Interests
+                        <li>Interest A</li>
+                        <li>Interest B</li>
+                        <Li>Interest C</Li>
+                        <li>Interest D</li>
                     </ul>
                 </div>
-            </div>            
-            <div class="format__cont">
-                <div class="format__cont__info">
-                    <ul>Languages
-                        <li>English</li>
-                        <li>Spanish</li>
-                    </ul>
-                </div>    
-            </div>            
-        </section>
-        <section class="sect__b">
-            <H2>SOFTWARE SKILLS</H2>
-            <div class="sect__b__banner">
-                <div class="sect__b__banner__son">
-                    <img class="sect__b__banner__son__img" src="./images/Skills_icons.png" alt="Skills_icons">                                     
-                </div>                                               
-            </div>
-        </section>
-        <section class="interest">
-            <div class="interest__cont">
-                <ul>Interests
-                    <li>Interest A</li>
-                    <li>Interest B</li>
-                    <Li>Interest C</Li>
-                    <li>Interest D</li>
-                </ul>
-            </div>
-        </section>
-        <section class="video">
-            <div class="video__link">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/FkIV4fsagCA?si=8-vDxS4z0yIFaPqq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p id="rights">Slimy Lich 2024-2024</p>             
-    </footer>    
+            </section>
+            <section class="video">
+                <div class="video__link">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FkIV4fsagCA?si=8-vDxS4z0yIFaPqq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+            
+        </main>
+        <footer>
+            <p id="rights">Slimy Lich 2024-2024</p>             
+        </footer>
+    </div>    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
