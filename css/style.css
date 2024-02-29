@@ -219,16 +219,28 @@ ul{
 .uxuiproyect{
     display: flex;
     padding: 48px 70px;
-
+    justify-content: space-around;
 }
 
-.uxuiproyect__1{
-    display:flex
+.uxuiproject2{
+    display: flex;
+    padding: 48px 70px;
+    justify-content: space-around;
+}
+
+.container-uxuiproject{
+    display:flex;
 }
 
 .uxuicapture{
     width: 750px;
     height: auto;
+}
+
+.paragraph2{
+    display: flex;
+    width: 490px;
+
 }
 
 .academic{
@@ -237,13 +249,6 @@ ul{
     margin-left: auto;
     margin-right: auto;
     padding: 120px;   
-}
-
-@media (max-width: 576px){
-    .academic{ 
-        width: 100%;
-        padding: 6px;     
-    }
 }
 
 .container-formation{
@@ -441,6 +446,11 @@ textarea{
         width: 150px;
     }
 
+    .academic{ 
+        width: 100%;
+        padding: 6px;     
+    }
+
     .artw{
         flex-direction: column;
         padding: 10px;  
@@ -457,7 +467,37 @@ textarea{
         width: 260px;
         height: 38px;
         padding: 25px 120px 25px 120px;
-    } 
+    }
+    
+    
+    /* UxUi Design*/
+
+    .uxuiproyect{
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-around;
+    }
+    
+    .uxuiproject2{
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-around;
+    }
+    
+    .container-uxuiproject{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .uxuicapture{
+        width: 280px;
+        height: auto;
+    }
+    
+    .paragraph2{
+        width: 280px;
+    }
 
     /*artworks*/
 
