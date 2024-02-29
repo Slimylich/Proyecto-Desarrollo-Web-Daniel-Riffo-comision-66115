@@ -208,12 +208,13 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    padding: 70px;   
+    padding: 70px 0;   
 }
 
 
 .works{
     display: flex;
+    padding: 10px;
 }
 
 .uxuiproyect{
@@ -310,11 +311,11 @@ img{
 .about{
     display: flex;
     height: 620;
-    width: 80%;
+    width: 83%;
     background-color: #01426A;
     border-radius: 8px;
     padding: 20;
-    margin: 60px 0 60px 0;
+    margin: 124px;
 }
 
 .video__link{
