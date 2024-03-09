@@ -1,0 +1,17 @@
+
+//general//
+
+@import './general/reset.scss';
+@import './general/variables.scss';
+
+//Layout
+
+@import './layout/header.scss';
+@import 'layout/footer.scss';
+
+//pages
+@import './pages/index.scss';
+@import './pages/artworks.scss';
+@import './pages/uxuidesign.scss';
+@import './pages/aboutme.scss';
+@import './pages/contact.scss';

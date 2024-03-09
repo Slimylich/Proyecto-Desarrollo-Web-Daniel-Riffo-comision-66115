@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  grid-area: header;
+}
+header .navbar {
+  background-color: #CE4656 !important;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #000;
+  padding: 2rem;
+}
+footer #rights {
+  color: #FFF;
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tittle {
+  display: flex;
+  width: 100% px;
+  height: 250px;
+  padding: 130px 70px 0 70px;
+}
+
+.resume {
+  display: flex;
+  margin: 160px 0px 160px 0px;
+  padding: 0 120px;
+  border: 0;
+  width: 100%;
+  height: 490px;
+  justify-content: space-between;
+  align-items: center;
+}
+.resume .container-resume1 {
+  order: 1;
+  width: 470px;
+}
+.resume .container-resume1 .paragraph {
+  order: 1;
+  width: 470px;
+}
+.resume .container-resume2 {
+  order: 2;
+  width: 470px;
+}
+.resume .container-resume2 img {
+  order: 2;
+  width: 470px;
+}
+
+.academic {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 120px;
+}
+.academic .container-formation {
+  display: flex;
+  background-color: #024269;
+  width: 470px;
+  height: 330px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 72px;
+  flex-direction: column;
+}
+.skills .sectB__banner {
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: #024269;
+  width: 100%;
+  height: 192px;
+  padding: 50px 240px 50px 240px;
+}
+.skills .sectB__banner #skillsIcons {
+  width: 972px;
+  height: 90px;
+}
+
+.interest {
+  display: flex;
+  margin: 80 0 80 0px;
+  justify-content: center;
+}
+.interest .hobbies {
+  background-color: #024269;
+  height: 320px;
+  width: 600px;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 72px;
+}
+
+.video .video__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.sectA__1__subtitle {
+  width: 530px;
+  height: fit-content;
+}
+
+.sectA__1__paragraph {
+  width: 530px;
+  height: 390px;
+}
+
+.expla {
+  font-size: 24px;
+  height: 490px;
+  width: 420px;
+}
+
+.artw {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+.artw .works {
+  display: flex;
+  padding: 10px;
+}
+
+.sectBig {
+  width: 100%;
+  justify-items: center;
+}
+.sectBig .about {
+  display: flex;
+  height: 620;
+  width: 83%;
+  background-color: #01426A;
+  border-radius: 8px;
+  padding: 20;
+  margin: 124px;
+}
+
+.formulary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=main.css.map */
