@@ -145,6 +145,29 @@ footer #rights {
   padding: 10px;
 }
 
+.uxuiproyect {
+  display: flex;
+  padding: 48px 70px;
+  justify-content: space-around;
+}
+.uxuiproyect .container-uxuiproject {
+  display: flex;
+}
+.uxuiproyect .paragraph2 {
+  display: flex;
+  width: 490px;
+}
+.uxuiproyect .uxuicapture {
+  width: 750px;
+  height: auto;
+}
+
+.uxuiproyect2 {
+  display: flex;
+  padding: 48px 70px;
+  justify-content: space-around;
+}
+
 .sectBig {
   width: 100%;
   justify-items: center;
