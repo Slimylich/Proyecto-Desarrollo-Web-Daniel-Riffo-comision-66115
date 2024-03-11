@@ -9,5 +9,9 @@
         border-radius: 8px;
         padding: 20;
         margin: 124px;
+        @include mobile(){
+            margin: 25px;
+            height: 360px;
+        }
     }  
 }

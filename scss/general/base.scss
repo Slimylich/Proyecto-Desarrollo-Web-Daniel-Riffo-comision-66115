@@ -53,10 +53,15 @@ p{
     }
 }
 
+img{
+    display: flex;
+    flex-direction: row;
+}
+
 ul{
     color: white;
     font-family: lato;
-    font-size: 36px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;

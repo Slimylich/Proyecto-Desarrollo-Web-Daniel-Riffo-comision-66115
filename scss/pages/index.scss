@@ -23,17 +23,29 @@
         .container-resume1{
             order: 1;
             width: 470px;
+            @include mobile(){
+                width: 142px;
+            }
             .paragraph{
                 order: 1;
                 width: 470px;
+                @include mobile(){
+                    width: 142px;
+                }
             }
         }
         .container-resume2{
             order: 2;
             width: 470px;
+            @include mobile(){
+                width: 142px;
+            }
             img{
                 order: 2;
                 width: 470px;
+                @include mobile(){
+                    width: 142px;
+                }
             }
         }
     
@@ -45,13 +57,27 @@
     margin-left: auto;
     margin-right: auto;
     padding: 120px;
+    @include mobile(){
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 6px;
+    }
     .container-formation{
         display: flex;
         background-color: #024269;
         width: 470px;
         height: 330px;
         border-radius: 8px;
-        padding: 20px;    
+        padding: 20px;
+        @include mobile(){
+            width: 172px;
+            height: 148px;
+            border-radius: 6px;
+            padding: 8px;
+            margin: 10px;
+                       
+        }    
     }
 
 }
@@ -63,16 +89,30 @@
     margin-right: auto;
     margin-top: 72px;
     flex-direction: column;
+    @include mobile(){
+        margin-top: 48px;
+    }
     .sectB__banner{
         justify-content: space-evenly;
         align-content: center;
         background-color: #024269;
         width: 100%;
         height: 192px;
-        padding: 50px 240px 50px 240px;        
+        padding: 50px 240px;
+        @include mobile(){
+            width: 320px;
+            height: 81px;
+            flex-wrap: wrap;
+            padding: 25px; 
+        }
         #skillsIcons{
         width: 972px;
         height: 90px;
+        @include mobile(){
+            width: 260px;
+            height: 25px;
+            padding: 0
+        }
         }    
     }
 }
@@ -88,6 +128,13 @@
         border-radius: 8px;
         padding: 20px;
         margin: 72px;
+        @include mobile(){
+            height: 130px;
+            width: 150px;
+            border-radius: 6px;
+            padding: 8px;
+            margin: 20px;
+        }
     }
 }
 

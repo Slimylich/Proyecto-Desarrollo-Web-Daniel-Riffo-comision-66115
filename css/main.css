@@ -96,10 +96,15 @@ p {
   }
 }
 
+img {
+  display: flex;
+  flex-direction: row;
+}
+
 ul {
   color: white;
   font-family: lato;
-  font-size: 36px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -168,17 +173,37 @@ footer #rights {
   order: 1;
   width: 470px;
 }
+@media (max-width: 576px) {
+  .resume .container-resume1 {
+    width: 142px;
+  }
+}
 .resume .container-resume1 .paragraph {
   order: 1;
   width: 470px;
+}
+@media (max-width: 576px) {
+  .resume .container-resume1 .paragraph {
+    width: 142px;
+  }
 }
 .resume .container-resume2 {
   order: 2;
   width: 470px;
 }
+@media (max-width: 576px) {
+  .resume .container-resume2 {
+    width: 142px;
+  }
+}
 .resume .container-resume2 img {
   order: 2;
   width: 470px;
+}
+@media (max-width: 576px) {
+  .resume .container-resume2 img {
+    width: 142px;
+  }
 }
 
 .academic {
@@ -188,6 +213,14 @@ footer #rights {
   margin-right: auto;
   padding: 120px;
 }
+@media (max-width: 576px) {
+  .academic {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+  }
+}
 .academic .container-formation {
   display: flex;
   background-color: #024269;
@@ -195,6 +228,15 @@ footer #rights {
   height: 330px;
   border-radius: 8px;
   padding: 20px;
+}
+@media (max-width: 576px) {
+  .academic .container-formation {
+    width: 172px;
+    height: 148px;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 10px;
+  }
 }
 
 .skills {
@@ -205,17 +247,37 @@ footer #rights {
   margin-top: 72px;
   flex-direction: column;
 }
+@media (max-width: 576px) {
+  .skills {
+    margin-top: 48px;
+  }
+}
 .skills .sectB__banner {
   justify-content: space-evenly;
   align-content: center;
   background-color: #024269;
   width: 100%;
   height: 192px;
-  padding: 50px 240px 50px 240px;
+  padding: 50px 240px;
+}
+@media (max-width: 576px) {
+  .skills .sectB__banner {
+    width: 320px;
+    height: 81px;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
 }
 .skills .sectB__banner #skillsIcons {
   width: 972px;
   height: 90px;
+}
+@media (max-width: 576px) {
+  .skills .sectB__banner #skillsIcons {
+    width: 260px;
+    height: 25px;
+    padding: 0;
+  }
 }
 
 .interest {
@@ -230,6 +292,15 @@ footer #rights {
   border-radius: 8px;
   padding: 20px;
   margin: 72px;
+}
+@media (max-width: 576px) {
+  .interest .hobbies {
+    height: 130px;
+    width: 150px;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 20px;
+  }
 }
 
 .video .video__link {
@@ -261,9 +332,23 @@ footer #rights {
   justify-content: space-between;
   padding: 70px 0;
 }
+@media (max-width: 576px) {
+  .artw {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
 .artw .works {
   display: flex;
   padding: 10px;
+}
+@media (max-width: 576px) {
+  .artw .works {
+    display: flex;
+    margin-bottom: 0.5rem;
+    height: 460px;
+    width: 300px;
+  }
 }
 
 .uxuiproyect {
@@ -271,22 +356,52 @@ footer #rights {
   padding: 48px 70px;
   justify-content: space-around;
 }
+@media (max-width: 576px) {
+  .uxuiproyect {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
 .uxuiproyect .container-uxuiproject {
   display: flex;
+}
+@media (max-width: 576px) {
+  .uxuiproyect .container-uxuiproject {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
 }
 .uxuiproyect .paragraph2 {
   display: flex;
   width: 490px;
 }
+@media (max-width: 576px) {
+  .uxuiproyect .paragraph2 {
+    width: 280px;
+  }
+}
 .uxuiproyect .uxuicapture {
   width: 750px;
   height: auto;
+}
+@media (max-width: 576px) {
+  .uxuiproyect .uxuicapture {
+    width: 280px;
+    height: auto;
+  }
 }
 
 .uxuiproyect2 {
   display: flex;
   padding: 48px 70px;
   justify-content: space-around;
+}
+@media (max-width: 576px) {
+  .uxuiproyect2 {
+    flex-direction: column;
+    padding: 20px;
+  }
 }
 
 .sectBig {
@@ -302,11 +417,63 @@ footer #rights {
   padding: 20;
   margin: 124px;
 }
+@media (max-width: 576px) {
+  .sectBig .about {
+    margin: 25px;
+    height: 360px;
+  }
+}
 
-.formulary {
+.contactme .contact-description {
+  text-align: center;
+}
+.contactme .formulary {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
+  margin: 48px 0;
+}
+.contactme .formulary label {
+  display: flex;
+  color: #DD357D;
+  font-size: 1.5rem;
+  font-family: "Lato";
+}
+.contactme .formulary .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactme .formulary .contact-form input {
+  border-radius: 0.5rem;
+  display: flex;
+  margin: 20px;
+  width: 1198px;
+  padding: 1rem;
+  height: 32px;
+}
+.contactme .formulary .contact-form textarea {
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 1rem;
+  width: 1198px;
+  height: 420px;
+  margin-bottom: 30px;
+}
+.contactme .formulary .contact-form .button-primary {
+  display: flex;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  margin: auto;
+  border-radius: 8px;
+  width: 228px;
+  font-family: "Lato";
+  font-weight: bold;
+  background-color: #DD357D;
 }
 
 /*# sourceMappingURL=main.css.map */

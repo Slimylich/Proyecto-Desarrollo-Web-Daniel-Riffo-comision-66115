@@ -3,10 +3,18 @@
     flex-direction: row;
     justify-content: space-between; 
     padding: 70px 0;
+    @include mobile(){
+        flex-direction: column;
+        padding: 10px;
+    }
     .works{
         display: flex;
         padding: 10px;
+        @include mobile(){
+            display: flex;
+            margin-bottom: 0.5rem;
+            height: 460px;
+            width: 300px;
+        }
     }   
 }
-
-
