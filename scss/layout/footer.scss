@@ -6,10 +6,17 @@ footer{
     #rights{
         color: #FFF;
         text-align: center;
-        font-family: Lato;
+        font-family: $typography-paragraphs;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-    }     
+    }
+    @include mobile{
+        footer{
+            grid-area: footer;
+            padding: 1rem;    
+        }   
+    }
+    
 }

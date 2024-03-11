@@ -3,6 +3,113 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: lato;
+  src: url(../font/Lato/Lato-Regular.ttf);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #1b1a33;
+}
+body main {
+  grid-area: main;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 72px auto 160px;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-areas: "header header header header header header header header header header header header" "main main main main main main main main main main main main" "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+@media (max-width: 576px) {
+  #grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px auto 76px;
+    column-gap: 8px;
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+  }
+}
+h1 {
+  color: #DD357D;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+@media (max-width: 576px) {
+  h1 {
+    padding-top: 24px;
+    font-size: 24px;
+  }
+}
+
+h2 {
+  color: #DC347C;
+  padding: 2rem;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 576px) {
+  h2 {
+    padding: 0.5rem;
+    font-size: 20px;
+  }
+}
+
+h3 {
+  color: #219CF9;
+  font-family: Oswald;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 576px) {
+  h3 {
+    font-size: 16px;
+  }
+}
+
+p {
+  color: #219CF9;
+  font-family: Lato;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 12px;
+  }
+}
+
+ul {
+  color: white;
+  font-family: lato;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 576px) {
+  ul {
+    font-size: 12px;
+  }
+}
+
 header {
   width: 100%;
   grid-area: header;
@@ -19,11 +126,17 @@ footer {
 footer #rights {
   color: #FFF;
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 576px) {
+  footer footer {
+    grid-area: footer;
+    padding: 1rem;
+  }
 }
 
 .tittle {
@@ -42,6 +155,14 @@ footer #rights {
   height: 490px;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 576px) {
+  .resume {
+    margin: 16px 0px 16px 0px;
+    padding: 0 20px;
+    width: 100%;
+    height: 137px;
+  }
 }
 .resume .container-resume1 {
   order: 1;

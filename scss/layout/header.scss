@@ -2,8 +2,6 @@ header{
     width: 100%;
     grid-area: header;
     .navbar{
-        background-color: #CE4656 !important; 
-    }
-    
-
+        background-color: $color-tertiary !important; 
+    }  
 }

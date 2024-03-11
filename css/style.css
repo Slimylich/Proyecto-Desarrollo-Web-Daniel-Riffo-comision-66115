@@ -1,9 +1,6 @@
 /*PAGINAS RESPONSIVE DESARROLLADAS: INDEX/UXUIDESIGN*/
 
-@font-face{
-    font-family: lato;
-    src: url(../font/Lato/Lato-Regular.ttf);
-}
+
 
 body{
     width: 100%;
@@ -342,8 +339,7 @@ textarea{
             "header header header header"
             "main main main main"
             "footer footer footer footer"       
-        ;         
-                    
+        ;                 
     }
 
     header{

@@ -5,3 +5,10 @@ $color-bg:#1b1a33;
 
 $typography-titles: 'Oswald';
 $typography-paragraphs: 'Lato';
+
+
+@mixin mobile{
+    @media (max-width: 576px){
+        @content;
+    }
+}
