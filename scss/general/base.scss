@@ -1,0 +1,66 @@
+h1{
+    color: #DD357D;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+    flex-direction: row;
+    flex-shrink: 0;  
+    @include mobile (){
+        padding-top: 24px;
+        font-size: 24px;  
+    } 
+}
+
+h2{
+    color: #DC347C;
+    padding: 2rem;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include mobile(){
+        padding: 0.5rem;
+        font-size: 20px;
+    }
+}
+
+h3{
+    color: #219CF9;
+    font-family: Oswald;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include mobile(){
+        font-size: 16px;
+    }
+}
+
+p{
+    color: #219CF9;
+    font-family: Lato;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include mobile(){
+        font-size: 12px;  
+    }
+}
+
+ul{
+    color: white;
+    font-family: lato;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include mobile(){
+        font-size: 12px;
+    }    
+}
