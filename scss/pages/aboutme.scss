@@ -7,11 +7,23 @@
         width: 83%;
         background-color: #01426A;
         border-radius: 8px;
-        padding: 20;
+        padding: 2rem;
         margin: 124px;
         @include mobile(){
+            padding: 1rem;
             margin: 25px;
             height: 360px;
         }
+        @include tablet(){
+            margin: 100px;
+            width: 74%;
+            height: 680px;
+        }
+        .description{
+            @include tablet(){
+                font-size: 2rem;
+            }
+        }
+
     }  
 }

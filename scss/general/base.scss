@@ -11,6 +11,9 @@ h1{
     @include mobile (){
         padding-top: 24px;
         font-size: 24px;  
+    }
+    @include tablet(){
+        font-size: 72px;
     } 
 }
 
@@ -27,6 +30,9 @@ h2{
         padding: 0.5rem;
         font-size: 20px;
     }
+    @include tablet(){
+        font-size: 2rem;
+    }
 }
 
 h3{
@@ -37,7 +43,10 @@ h3{
     font-weight: 500;
     line-height: normal;
     @include mobile(){
-        font-size: 16px;
+        font-size: 1rem;
+    }
+    @include tablet(){
+        font-size: 2rem;
     }
 }
 
@@ -67,5 +76,8 @@ ul{
     line-height: normal;
     @include mobile(){
         font-size: 12px;
+    }
+    @include tablet(){
+        font-size: 1rem;
     }    
 }

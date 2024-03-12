@@ -33,6 +33,14 @@ body main {
     grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
   }
 }
+@media (min-width: 580px) and (max-width: 768px) {
+  #grid-container {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 40px auto 76px;
+    column-gap: 16px;
+    grid-template-areas: "header header header header header header header header" "main main main main main main main main" "footer footer footer footer footer footer footer footer";
+  }
+}
 h1 {
   color: #DD357D;
   text-align: center;
@@ -48,6 +56,11 @@ h1 {
   h1 {
     padding-top: 24px;
     font-size: 24px;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  h1 {
+    font-size: 72px;
   }
 }
 
@@ -67,6 +80,11 @@ h2 {
     font-size: 20px;
   }
 }
+@media (min-width: 580px) and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 
 h3 {
   color: #219CF9;
@@ -78,7 +96,12 @@ h3 {
 }
 @media (max-width: 576px) {
   h3 {
-    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  h3 {
+    font-size: 2rem;
   }
 }
 
@@ -112,6 +135,11 @@ ul {
 @media (max-width: 576px) {
   ul {
     font-size: 12px;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  ul {
+    font-size: 1rem;
   }
 }
 
@@ -153,7 +181,7 @@ footer #rights {
 
 .resume {
   display: flex;
-  margin: 160px 0px 160px 0px;
+  margin: 80px 0px;
   padding: 0 120px;
   border: 0;
   width: 100%;
@@ -163,10 +191,16 @@ footer #rights {
 }
 @media (max-width: 576px) {
   .resume {
-    margin: 16px 0px 16px 0px;
+    margin: 16px 0px;
     padding: 0 20px;
     width: 100%;
     height: 137px;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .resume {
+    margin: 80px 0;
+    height: 280px;
   }
 }
 .resume .container-resume1 {
@@ -176,6 +210,13 @@ footer #rights {
 @media (max-width: 576px) {
   .resume .container-resume1 {
     width: 142px;
+    height: auto;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .resume .container-resume1 {
+    width: 280px;
+    height: auto;
   }
 }
 .resume .container-resume1 .paragraph {
@@ -185,6 +226,14 @@ footer #rights {
 @media (max-width: 576px) {
   .resume .container-resume1 .paragraph {
     width: 142px;
+    height: auto;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .resume .container-resume1 .paragraph {
+    width: 280px;
+    height: auto;
+    font-size: 1rem;
   }
 }
 .resume .container-resume2 {
@@ -194,6 +243,13 @@ footer #rights {
 @media (max-width: 576px) {
   .resume .container-resume2 {
     width: 142px;
+    height: auto;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .resume .container-resume2 {
+    width: 280px;
+    height: auto;
   }
 }
 .resume .container-resume2 img {
@@ -203,6 +259,13 @@ footer #rights {
 @media (max-width: 576px) {
   .resume .container-resume2 img {
     width: 142px;
+    height: auto;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .resume .container-resume2 img {
+    width: 280px;
+    height: auto;
   }
 }
 
@@ -221,6 +284,11 @@ footer #rights {
     padding: 6px;
   }
 }
+@media (min-width: 580px) and (max-width: 768px) {
+  .academic {
+    padding: 30px 98px;
+  }
+}
 .academic .container-formation {
   display: flex;
   background-color: #024269;
@@ -236,6 +304,12 @@ footer #rights {
     border-radius: 6px;
     padding: 8px;
     margin: 10px;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .academic .container-formation {
+    width: 278px;
+    height: 200px;
   }
 }
 
@@ -268,6 +342,11 @@ footer #rights {
     padding: 25px;
   }
 }
+@media (min-width: 580px) and (max-width: 768px) {
+  .skills .sectB__banner {
+    padding: 50px 30px;
+  }
+}
 .skills .sectB__banner #skillsIcons {
   width: 972px;
   height: 90px;
@@ -277,6 +356,12 @@ footer #rights {
     width: 260px;
     height: 25px;
     padding: 0;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .skills .sectB__banner #skillsIcons {
+    width: 720px;
+    height: 72px;
   }
 }
 
@@ -300,6 +385,12 @@ footer #rights {
     border-radius: 6px;
     padding: 8px;
     margin: 20px;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .interest .hobbies {
+    height: 240px;
+    width: 372px;
   }
 }
 
@@ -338,6 +429,11 @@ footer #rights {
     padding: 10px;
   }
 }
+@media (min-width: 580px) and (max-width: 768px) {
+  .artw {
+    flex-direction: column;
+  }
+}
 .artw .works {
   display: flex;
   padding: 10px;
@@ -348,6 +444,12 @@ footer #rights {
     margin-bottom: 0.5rem;
     height: 460px;
     width: 300px;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .artw .works {
+    width: 50%;
+    margin: auto;
   }
 }
 
@@ -372,18 +474,36 @@ footer #rights {
     align-content: center;
   }
 }
+@media (min-width: 580px) and (max-width: 768px) {
+  .uxuiproyect .container-uxuiproject {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
 .uxuiproyect .paragraph2 {
   display: flex;
   width: 490px;
+  font-size: 2rem;
 }
 @media (max-width: 576px) {
   .uxuiproyect .paragraph2 {
     width: 280px;
+    height: auto;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .uxuiproyect .paragraph2 {
+    width: 260px;
+    height: 300px;
+    font-size: 1rem;
+    margin-right: 20px;
   }
 }
 .uxuiproyect .uxuicapture {
   width: 750px;
-  height: auto;
+  height: 489px;
 }
 @media (max-width: 576px) {
   .uxuiproyect .uxuicapture {
@@ -391,16 +511,80 @@ footer #rights {
     height: auto;
   }
 }
+@media (min-width: 580px) and (max-width: 768px) {
+  .uxuiproyect .uxuicapture {
+    width: 460px;
+    height: 300px;
+  }
+}
 
-.uxuiproyect2 {
+.uxuipro2 {
   display: flex;
   padding: 48px 70px;
   justify-content: space-around;
+  align-items: center;
 }
 @media (max-width: 576px) {
-  .uxuiproyect2 {
+  .uxuipro2 {
     flex-direction: column;
     padding: 20px;
+  }
+}
+
+.container-uxuipro2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 576px) {
+  .container-uxuipro2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .container-uxuipro2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+
+.paragraph3 {
+  display: flex;
+  width: 490px;
+  font-size: 2rem;
+}
+@media (max-width: 576px) {
+  .paragraph3 {
+    width: 280px;
+    height: auto;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .paragraph3 {
+    width: 260px;
+    height: 300px;
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+}
+
+.uxuicap2 {
+  width: 750px;
+  height: 489px;
+}
+@media (max-width: 576px) {
+  .uxuicap2 {
+    width: 280px;
+    height: auto;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .uxuicap2 {
+    width: 460px;
+    height: 300px;
   }
 }
 
@@ -414,13 +598,26 @@ footer #rights {
   width: 83%;
   background-color: #01426A;
   border-radius: 8px;
-  padding: 20;
+  padding: 2rem;
   margin: 124px;
 }
 @media (max-width: 576px) {
   .sectBig .about {
+    padding: 1rem;
     margin: 25px;
     height: 360px;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .sectBig .about {
+    margin: 100px;
+    width: 74%;
+    height: 680px;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .sectBig .about .description {
+    font-size: 2rem;
   }
 }
 
@@ -453,6 +650,12 @@ footer #rights {
   padding: 1rem;
   height: 32px;
 }
+@media (min-width: 580px) and (max-width: 768px) {
+  .contactme .formulary .contact-form input {
+    width: 640px;
+    margin: 10px;
+  }
+}
 .contactme .formulary .contact-form textarea {
   border-radius: 0.5rem;
   display: flex;
@@ -460,6 +663,11 @@ footer #rights {
   width: 1198px;
   height: 420px;
   margin-bottom: 30px;
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .contactme .formulary .contact-form textarea {
+    width: 640px;
+  }
 }
 .contactme .formulary .contact-form .button-primary {
   display: flex;

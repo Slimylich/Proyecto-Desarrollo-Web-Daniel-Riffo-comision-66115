@@ -7,6 +7,9 @@
         flex-direction: column;
         padding: 10px;
     }
+    @include tablet(){
+        flex-direction: column;
+    }
     .works{
         display: flex;
         padding: 10px;
@@ -15,6 +18,10 @@
             margin-bottom: 0.5rem;
             height: 460px;
             width: 300px;
+        }
+        @include tablet(){
+            width: 50%;
+            margin: auto;
         }
     }   
 }

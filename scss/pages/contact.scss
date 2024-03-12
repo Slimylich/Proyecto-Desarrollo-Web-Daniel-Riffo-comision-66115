@@ -26,6 +26,10 @@
                 width: 1198px;
                 padding: 1rem;
                 height: 32px;
+                @include tablet(){
+                    width: 640px;
+                    margin: 10px;                    
+                }
             }        
             textarea{
                 border-radius: 0.5rem;
@@ -34,6 +38,9 @@
                 width: 1198px;
                 height: 420px;
                 margin-bottom: 30px;
+                @include tablet(){
+                    width: 640px;
+                }
             }
             .button-primary{
                 display: flex;
