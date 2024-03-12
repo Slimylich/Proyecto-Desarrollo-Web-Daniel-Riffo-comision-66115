@@ -4,8 +4,11 @@
     justify-content: space-around;
     @include mobile(){
         flex-direction: column;
-        padding: 20px;        
+        padding: 20px;
+        flex-wrap: wrap;
+        align-content: center;                
     }
+
     .container-uxuiproject{
         display:flex;
         @include mobile(){        
@@ -63,6 +66,7 @@
     .container-uxuipro2{
         display:flex;
         flex-wrap: wrap;
+        flex-direction: column;
         @include mobile(){        
             flex-direction: column;
             flex-wrap: wrap;

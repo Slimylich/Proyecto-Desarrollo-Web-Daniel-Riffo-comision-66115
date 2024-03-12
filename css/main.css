@@ -185,6 +185,16 @@ footer #rights {
   justify-content: center;
   margin: 100px;
 }
+@media (max-width: 576px) {
+  .social-links {
+    margin: 10px;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .social-links {
+    margin: 45px;
+  }
+}
 .social-links a {
   width: 80px;
   height: 80px;
@@ -504,6 +514,8 @@ footer #rights {
   .uxuiproyect {
     flex-direction: column;
     padding: 20px;
+    flex-wrap: wrap;
+    align-content: center;
   }
 }
 .uxuiproyect .container-uxuiproject {
@@ -576,6 +588,7 @@ footer #rights {
 .container-uxuipro2 {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 @media (max-width: 576px) {
   .container-uxuipro2 {
@@ -673,16 +686,26 @@ footer #rights {
   align-content: center;
   margin: 48px 0;
 }
-.contactme .formulary label {
-  display: flex;
-  color: #DD357D;
-  font-size: 1.5rem;
-  font-family: "Lato";
-}
 .contactme .formulary .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.contactme .formulary .contact-form label {
+  display: flex;
+  color: #DD357D;
+  font-size: 2rem;
+  font-family: "Lato";
+}
+@media (max-width: 576px) {
+  .contactme .formulary .contact-form label {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .contactme .formulary .contact-form label {
+    font-size: 1rem;
+  }
 }
 .contactme .formulary .contact-form input {
   border-radius: 0.5rem;
@@ -691,6 +714,12 @@ footer #rights {
   width: 1198px;
   padding: 1rem;
   height: 32px;
+}
+@media (max-width: 576px) {
+  .contactme .formulary .contact-form input {
+    width: 300px;
+    margin: 10px;
+  }
 }
 @media (min-width: 580px) and (max-width: 768px) {
   .contactme .formulary .contact-form input {
@@ -705,6 +734,11 @@ footer #rights {
   width: 1198px;
   height: 420px;
   margin-bottom: 30px;
+}
+@media (max-width: 576px) {
+  .contactme .formulary .contact-form textarea {
+    width: 300px;
+  }
 }
 @media (min-width: 580px) and (max-width: 768px) {
   .contactme .formulary .contact-form textarea {
