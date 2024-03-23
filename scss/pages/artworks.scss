@@ -16,8 +16,8 @@
         @include mobile(){
             display: flex;
             margin-bottom: 0.5rem;
-            height: 460px;
-            width: 300px;
+            height: auto;
+            width: auto;
         }
         @include tablet(){
             width: 50%;
