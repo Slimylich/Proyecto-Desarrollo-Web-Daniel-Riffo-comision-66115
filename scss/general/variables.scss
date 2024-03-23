@@ -1,7 +1,7 @@
 $color-primary: #DD357D;
 $color-secondary: #219CF9;
 $color-tertiary: #CE4656;
-$color-bg:#1b1a33;
+$color-background:#1b1a33;
 
 $typography-titles: 'Oswald';
 $typography-paragraphs: 'Lato';
@@ -15,6 +15,12 @@ $typography-paragraphs: 'Lato';
 
 @mixin tablet{
     @media (min-width: 580px) and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin laptopmini{
+    @media (min-width: 790px) and (max-width: 1024px){
         @content;
     }
 }

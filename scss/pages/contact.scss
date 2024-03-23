@@ -40,6 +40,9 @@
                     width: 640px;
                     margin: 10px;                    
                 }
+                @include laptopmini(){
+                    width: 852px;
+                }
             }        
             textarea{
                 border-radius: 0.5rem;
@@ -53,6 +56,9 @@
                 }
                 @include tablet(){
                     width: 640px;
+                }
+                @include laptopmini(){
+                    width: 852px;
                 }
             }
             .button-primary{

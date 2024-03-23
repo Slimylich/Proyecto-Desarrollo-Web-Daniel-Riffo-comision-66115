@@ -1,4 +1,4 @@
-Tercera pre entrega proyecto desarrollo web.
-Adicion de SEO
-Traspaso a sistema SASS
-cambios varios y animación en Index, redes sociales.
+Entrega final del proyecto de cursada Coderhouse:
+
+La web consiste en un portafolio web, tomando en consideración lo aprendido 
+y adaptandolo a la situación, se considera esta versión como la 1.0

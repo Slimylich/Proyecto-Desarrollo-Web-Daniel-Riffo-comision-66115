@@ -10,9 +10,12 @@
     @include tablet(){
         flex-direction: column;
     }
+    @include laptopmini(){
+        flex-direction: column;
+    }
     .works{
         display: flex;
-        padding: 10px;
+        padding: 24px;
         @include mobile(){
             display: flex;
             margin-bottom: 0.5rem;
@@ -22,6 +25,11 @@
         @include tablet(){
             width: 50%;
             margin: auto;
+        }
+        @include laptopmini(){
+            display: flex;
+            margin: auto;
+            width: 549px
         }
     }   
 }

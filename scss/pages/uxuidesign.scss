@@ -8,7 +8,6 @@
         flex-wrap: wrap;
         align-content: center;                
     }
-
     .container-uxuiproject{
         display:flex;
         @include mobile(){        
@@ -21,12 +20,18 @@
             flex-wrap: wrap;
             align-content: center;        
         }
+        @include laptopmini(){        
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;        
+        }
+        
     }
     
     .paragraph2{
         display: flex;
         width: 490px;
-        font-size: 2rem;
+        font-size: 1.6rem;
         @include mobile(){        
             width: 280px;
             height: auto;
@@ -38,10 +43,16 @@
             font-size: 1rem;
             margin-right: 20px;
         }
+        @include laptopmini(){
+            width: 260px;
+            height: 300px;
+            font-size: 1rem;
+            margin-right: 20px;
+        }
     }
     .uxuicapture{
-        width: 750px;
-        height: 489px;
+        width: 586px;
+        height: auto;
         @include mobile(){
             width: 280px;
             height: auto;
@@ -49,6 +60,10 @@
         @include tablet(){
             width: 460px;
             height: 300px;
+        }
+        @include laptopmini(){
+            width: 491px;
+            height: auto;
         }
     }
 }
@@ -82,7 +97,7 @@
     .paragraph3{
         display: flex;
         width: 490px;
-        font-size: 2rem;
+        font-size: 1.6rem;
         @include mobile(){        
             width: 280px;
             height: auto;
@@ -94,10 +109,16 @@
             font-size: 1rem;
             margin-right: 20px;
         }
+        @include laptopmini(){
+            width: 260px;
+            height: 300px;
+            font-size: 1rem;
+            margin-right: 20px;            
+        }
     }
     .uxuicap2{
-        width: 750px;
-        height: 489px;
+        width: 586px;
+        height: auto;
         @include mobile(){
             width: 280px;
             height: auto;
@@ -105,5 +126,9 @@
         @include tablet(){
             width: 460px;
             height: 300px;
+        }
+        @include laptopmini(){
+            width: 491px;
+            height: auto;      
         }
  }

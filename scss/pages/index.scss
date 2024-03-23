@@ -104,6 +104,9 @@
                 width: 280px;
                 height: auto;
             }
+            @include laptopmini(){
+                width: 388px;
+            }
             .paragraph{
                 order: 1;
                 width: 470px;
@@ -115,6 +118,9 @@
                     width: 280px;
                     height: auto;
                     font-size: 1rem;
+                }
+                @include laptopmini(){
+                    width: 388px;
                 }
             }
         }
@@ -129,6 +135,9 @@
                 width: 280px;
                 height: auto;
             }
+            @include laptopmini(){
+                width: 388px;
+            }
             img{
                 order: 2;
                 width: 470px;
@@ -139,6 +148,9 @@
                 @include tablet(){
                     width: 280px;
                     height: auto;
+                }
+                @include laptopmini(){
+                    width: 388px;
                 }
             }
         }
@@ -160,17 +172,18 @@
     @include tablet(){
         padding: 30px 98px;
     }
+    @include laptopmini(){
+        padding: 88px;
+    }
     .container-formation{
         display: flex;
         background-color: #024269;
         width: 470px;
-        height: 330px;
-        border-radius: 8px;
+        height: 330px;        
         padding: 20px;
         @include mobile(){
-            width: 172px;
-            height: 148px;
-            border-radius: 6px;
+            width: 156px;
+            height: 168px;
             padding: 8px;
             margin: 10px;
                        
@@ -178,6 +191,9 @@
         @include tablet(){
             width: 278px;
             height: 200px;
+        }
+        @include laptopmini(){
+            width: 413px;
         }    
     }
 
@@ -209,6 +225,9 @@
         @include tablet(){
             padding: 50px 30px;
         }
+        @include laptopmini(){
+            padding: 50px 88px;
+        }
         #skillsIcons{
         width: 972px;
         height: 90px;
@@ -220,6 +239,10 @@
         @include tablet(){
             width: 720px;
             height: 72px;        
+        }
+        @include laptopmini(){
+            width: 783px;
+            height: auto;        
         }
         }
             
@@ -233,20 +256,21 @@
     .hobbies{
         background-color: #024269;
         height: 320px;
-        width: 600px;
-        border-radius: 8px;
+        width: 463px;
         padding: 20px;
         margin: 72px;
         @include mobile(){
             height: 130px;
             width: 150px;
-            border-radius: 6px;
             padding: 8px;
             margin: 20px;
         }
         @include tablet(){
             height: 240px;
             width: 372px;
+        }
+        @include laptopmini(){
+            width: 328px;
         }
     }
 }
@@ -270,10 +294,4 @@
 .sectA__1__paragraph{    
     width: 530px;
     height: 390px;
-}
-
-.expla{
-    font-size: 24px;
-    height: 490px;
-    width: 420px;
 }
