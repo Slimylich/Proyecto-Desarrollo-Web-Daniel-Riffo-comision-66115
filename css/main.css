@@ -172,6 +172,26 @@ footer #rights {
   }
 }
 
+.indexbody {
+  background-image: url(../images/bgbanner.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media (max-width: 576px) {
+  .indexbody {
+    background-size: 600px;
+    background-position-x: center;
+    background-position-y: 56px;
+  }
+}
+@media (min-width: 580px) and (max-width: 768px) {
+  .indexbody {
+    background-size: 1000px;
+    background-position-x: center;
+    background-position-y: 34px;
+  }
+}
+
 .tittle {
   display: flex;
   width: 100% px;
@@ -494,8 +514,8 @@ footer #rights {
   .artw .works {
     display: flex;
     margin-bottom: 0.5rem;
-    height: 460px;
-    width: 300px;
+    height: auto;
+    width: auto;
   }
 }
 @media (min-width: 580px) and (max-width: 768px) {
