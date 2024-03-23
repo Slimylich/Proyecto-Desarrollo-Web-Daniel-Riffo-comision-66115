@@ -179,7 +179,7 @@ footer #rights {
 }
 
 .indexbody {
-  background-image: url(../images/bgbanner.png);
+  background-image: url("../images/bgbanner.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
